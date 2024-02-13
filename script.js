@@ -4,7 +4,7 @@ document.getElementById('yesBtn').addEventListener('click', function() {
     document.getElementById('beggingGif').style.display = 'none';
 
     // Update the question to show the celebration message
-    document.querySelector('.question').textContent = "WOOHOOOO! Happy Valentines Day! I love you!";
+    document.querySelector('.question').textContent = "WOOHOOOO! Happy Valentine's Day! I love you!";
 
     // Show the additional message without removing or hiding it
     var additionalMessage = document.getElementById('additionalMessage');
