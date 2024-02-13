@@ -1,0 +1,130 @@
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevents scrolling if content overflows */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #ff65a3 50%;
+    color: #fff;
+}
+
+.content {
+    text-align: center; /* Center the text within the content div */
+}
+
+.question, .buttons {
+    margin: 0 auto; /* Center content horizontally */
+    display: block; /* Stack elements vertically */
+}
+
+.question {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+#additionalMessage {
+    margin-top: 20px;
+    font-size: 24px;
+    margin: 20px auto; /* Adjust the margin as needed */
+    padding: 20px;
+    color: #fff; /* Adjust as needed */
+    text-align: center; /* Center the text */
+    position: relative; /* Change from absolute if needed to ensure it's part of the natural document flow */
+    z-index: 20; /* Ensure it's above other content, but adjust based on your layout needs */
+    width: calc(100% - 40px); /* Adjust width to prevent overlap with corner images */
+    max-width: 600px; /* Keep your max-width or adjust */
+}
+
+.buttons {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.buttons button {
+    border: none;
+    width: 200px; /* Larger initial size */
+    height: 100px; /* Larger initial size */
+    font-size: 26px; /* Adjusted font size */
+    color: #fff;
+    background-color: #f48fb1;
+    border-radius: 50px; /* More pronounced rounded corners */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+/* Apply hover effect universally to both buttons */
+.buttons button:hover {
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+}
+
+/* Apply active (click) effect universally to both buttons */
+.buttons button:active {
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+    transform: translateY(-1px);
+}
+
+/* Specific styles for the No button */
+#noBtn {
+    background-color: #f06292; /* Specific color for No button */
+    /* Ensure transform is reset to scale(1) for consistency */
+    transform: scale(1); 
+}
+
+.celebration-message {
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    margin: 20px 0;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Make the GIF smaller */
+.valentine-gif {
+    display: block;
+    margin: 20px auto; /* Centers the GIF and adds space above and below */
+    max-width: 200px; /* Smaller width for the GIF */
+    height: auto; /* Keeps the aspect ratio of the GIF */
+    margin-top: 30px;
+}
+
+/* Make the corner images larger and not right at the corners */
+.image-position-1, .image-position-2, .image-position-3, .image-position-4 {
+    width: 300px; /* Larger size for the images */
+    height: auto; /* Adjust height automatically to maintain aspect ratio */
+}
+
+.image-position-1 {
+    position: absolute;
+    top: 20px; /* Not right at the corner */
+    left: 20px;
+}
+
+.image-position-2 {
+    position: absolute;
+    top: 20px; /* Not right at the corner */
+    right: 20px;
+}
+
+.image-position-3 {
+    position: absolute;
+    bottom: 20px; /* Not right at the corner */
+    left: 20px;
+}
+
+.image-position-4 {
+    position: absolute;
+    bottom: 20px; /* Not right at the corner */
+    right: 20px;
+}
